@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Featured Products - DigiHub</title>
+    <link rel="stylesheet" href="../css/feature.css">
+
+    <!-- Meta Tags for SEO -->
+    <meta
+      name="description"
+      content="DigiHub - Premium shopping experience with latest fashion trends, electronics, and lifestyle products."
+    />
+    <meta
+      name="keywords"
+      content="ecommerce, online shopping, fashion, electronics, lifestyle"
+    />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="DigiHub - Premium Shopping Experience" />
+    <meta
+      property="og:description"
+      content="Discover the latest trends in fashion, electronics, and lifestyle products."
+    />
+    <meta property="og:image" content="/api/placeholder/1200/630" />
+    <meta property="og:url" content="https://DigiHub.com" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="DigiHub - Premium Shopping Experience"
+    />
+    <meta
+      name="twitter:description"
+      content="Discover the latest trends in fashion, electronics, and lifestyle products."
+    />
+    <meta name="twitter:image" content="/api/placeholder/1200/630" />
+
+    <!-- Telegram Meta Tags -->
+    <meta name="telegram:channel" content="@DigiHub" />
+    <meta
+      name="telegram:description"
+      content="Follow us on Telegram for exclusive deals and updates!"
+    />
+
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="sticky-header">
+      <nav class="top-menu">
+        <div class="container menu-inner">
+          <div style="display: flex; align-items: center">
+            <a href="/index.html">
+              <img
+                src="https://i0.wp.com/www.douggrady.com/wp-content/uploads/2019/01/dg-logo.png?fit=300%2C300&ssl=1"
+                alt="DG Logo"
+                class="logo"
+              />
+            </a>
+            <a class="site-name" href="/index.html">DigiHub</a>
+          </div>
+          <button class="menu-button" onclick="toggleMenu()">☰</button>
+          <ul class="menu-links" id="navMenu">
+            <li class="menu-item">
+              <a class="menu-link" href="../index.html">Home</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="/build/feature.html">Featured</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="/build/contact.html">Contact</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="/build/about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Featured Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <h1 class="big-title">Featured Products</h1>
+        <p class="subtitle">
+          Discover our handpicked selection of premium products
+        </p>
+      </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filter-section">
+      <div class="container">
+        <div class="filter-box">
+          <div class="filter-row">
+            <div class="filter-column">
+              <select class="dropdown">
+                <option>Sort by: Featured</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Newest First</option>
+              </select>
+            </div>
+            <div class="filter-column">
+              <div class="categories">
+                <a href="#" class="category-link active-category">All</a>
+                <a href="#" class="category-link">Electronics</a>
+                <a href="#" class="category-link">Fashion</a>
+                <a href="#" class="category-link">Home</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="featured" class="products-section">
+      <div class="container">
+        <div class="products-grid">
+          <!-- Product 1 -->
+          <div class="product-box">
+            <div class="product-card">
+              <div class="img-container">
+                <img
+                  src="https://www.rhodium.com.tr/assets/rolex/collection_page/watch_assets_upright/m279135rbr-0001_collection_upright_portrait.png"
+                  class="product-img"
+                  alt="Product 1"
+                />
+              </div>
+              <div class="product-info">
+                <h5 class="product-title">Premium Watch</h5>
+                <p class="product-desc">Elegant timepiece for any occasion</p>
+                <div class="star-rating">
+                  ★★★★☆
+                  <span class="rating-text">(4.5)</span>
+                </div>
+                <p class="price">$199.99</p>
+                <button class="buy-button">Buy</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-box">
+            <div class="product-card">
+              <div class="img-container">
+                <img
+                  src="https://i0.wp.com/directdealz.lk/wp-content/uploads/2024/10/Xiaomi-Redmi-Buds-6-Lite-7.png?fit=650%2C650&ssl=1"
+                  class="product-img"
+                  alt="Product 2"
+                />
+              </div>
+              <div class="product-info">
+                <h5 class="product-title">Wireless Earbuds</h5>
+                <p class="product-desc">Premium sound quality</p>
+                <div class="star-rating">
+                  ★★★★☆
+                  <span class="rating-text">(4.5)</span>
+                </div>
+                <p class="price">$149.99</p>
+                <button class="buy-button">Buy</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-box">
+            <div class="product-card">
+              <div class="img-container">
+                <img
+                  src="https://img.freepik.com/premium-photo/white-women-s-cosmetic-bag-mockup-without-logo_587847-80.jpg?ga=GA1.1.1871191916.1736959269&semt=ais_hybrid"
+                  class="product-img"
+                  alt="Product 3"
+                />
+              </div>
+              <div class="product-info">
+                <h5 class="product-title">Designer Bag</h5>
+                <p class="product-desc">Stylish and practical</p>
+                <div class="star-rating">
+                  ★★★★☆
+                  <span class="rating-text">(4.5)</span>
+                </div>
+                <p class="price">$299.99</p>
+                <button class="buy-button">Buy</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-box">
+            <div class="product-card">
+              <div class="img-container">
+                <img
+                  src="https://i.pcmag.com/imagery/reviews/00EU3U5rRoe9swRlkJE2yDa-1..v1601052236.jpg"
+                  class="product-img"
+                  alt="Product 4"
+                />
+              </div>
+              <div class="product-info">
+                <h5 class="product-title">Wireless Speaker</h5>
+                <p class="product-desc">Premium sound quality</p>
+                <div class="star-rating">
+                  ★★★★☆
+                  <span class="rating-text">(4.5)</span>
+                </div>
+                <p class="price">$149.99</p>
+                <button class="buy-button">Buy</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="product-box">
+            <div class="product-card">
+              <div class="img-container">
+                <img
+                  src="https://fitvii.com/cdn/shop/files/20240816-162819.jpg?v=1736766813&width=823"
+                  class="product-img"
+                  alt="Product 5"
+                />
+              </div>
+              <div class="product-info">
+                <h5 class="product-title">Smartwatch</h5>
+                <p class="product-desc">Track your fitness goals</p>
+                <div class="star-rating">
+                  ★★★★★
+                  <span class="rating-text">(5)</span>
+                </div>
+                <p class="price">$99.99</p>
+                <button class="buy-button">Buy</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="product-box">
+            <div class="product-card">
+              <div class="img-container">
+                <img
+                  src="https://media.steelseriescdn.com/thumbs/catalog/items/62406/d447dc561ffd4b45a8162f663464f34b.png.500x400_q100_crop-fit_optimize.png"
+                  class="product-img"
+                  alt="Product 6"
+                />
+              </div>
+              <div class="product-info">
+                <h5 class="product-title">Gaming Mouse</h5>
+                <p class="product-desc">High precision for gamers</p>
+                <div class="star-rating">
+                  ★★★★☆
+                  <span class="rating-text">(4)</span>
+                </div>
+                <p class="price">$59.99</p>
+                <button class="buy-button">Buy</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 7 -->
+          <div class="product-box">
+            <div class="product-card">
+              <div class="img-container">
+                <img
+                  src="https://m.media-amazon.com/images/I/713ZvA5hL9L._AC_SX679_.jpg"
+                  class="product-img"
+                  alt="Product 7"
+                />
+              </div>
+              <div class="product-info">
+                <h5 class="product-title">Ceramic Plant Pot</h5>
+                <p class="product-desc">Perfect for indoor plants</p>
+                <div class="star-rating">
+                  ★★★☆☆
+                  <span class="rating-text">(3.5)</span>
+                </div>
+                <p class="price">$49.99</p>
+                <button class="buy-button">Buy</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 8 -->
+          <div class="product-box">
+            <div class="product-card">
+              <div class="img-container">
+                <img
+                  src="https://vhaan.in/cdn/shop/files/3_6d808391-2166-4b73-b6b0-be206ec18fc7.png?v=1712247309&width=1200"
+                  class="product-img"
+                  alt="Product 8"
+                />
+              </div>
+              <div class="product-info">
+                <h5 class="product-title">Leather Wallet</h5>
+                <p class="product-desc">Durable and stylish design</p>
+                <div class="star-rating">
+                  ★★★★★
+                  <span class="rating-text">(3.5)</span>
+                </div>
+                <p class="price">$69.99</p>
+                <button class="buy-button">Buy</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 9 -->
+          <div class="product-box">
+            <div class="product-card">
+              <div class="img-container">
+                <img
+                  src="https://dam.delonghi.com/600x600/assets/189537"
+                  class="product-img"
+                  alt="Product 9"
+                />
+              </div>
+              <div class="product-info">
+                <h5 class="product-title">Coffee Maker</h5>
+                <p class="product-desc">Brew your perfect cup every morning</p>
+                <div class="star-rating">
+                  ★★★★☆
+                  <span class="rating-text">(4.5)</span>
+                </div>
+                <p class="price">$349.99</p>
+                <button class="buy-button">Buy</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 10 -->
+          <div class="product-box">
+            <div class="product-card">
+              <div class="img-container">
+                <img
+                  src="https://tangoofficial.com/cdn/shop/products/Adobe_Express_20221118_0155500_1.png?v=1668718639&width=823"
+                  class="product-img"
+                  alt="Product 10"
+                />
+              </div>
+              <div class="product-info">
+                <h5 class="product-title">Leather Jacket</h5>
+                <p class="product-desc">
+                  Stylish and comfortable for any occasion
+                </p>
+                <div class="star-rating">
+                  ★★★★☆
+                  <span class="rating-text">(4)</span>
+                </div>
+                <p class="price">$99.99</p>
+                <button class="buy-button">Buy</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 11 -->
+          <div class="product-box">
+            <div class="product-card">
+              <div class="img-container">
+                <img
+                  src="https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/480x480/9df78eab33525d08d6e5fb8d27136e95//v/i/matte-black-grey-solid-full-rim-rectangle-square-vincent-chase-polarized-the-metal-edit-vc-s13116-c1-sunglasses_vincent-chase-vc-s13116-c1-sunglasses_g_7206_1_5july23.jpg"
+                  class="product-img"
+                  alt="Product 11"
+                />
+              </div>
+              <div class="product-info">
+                <h5 class="product-title">Sunglasses</h5>
+                <p class="product-desc">Protect your eyes with style</p>
+                <div class="star-rating">
+                  ★★★★☆
+                  <span class="rating-text">(4)</span>
+                </div>
+                <p class="price">$59.99</p>
+                <button class="buy-button">Buy</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 12 -->
+          <div class="product-box">
+            <div class="product-card">
+              <div class="img-container">
+                <img
+                  src="https://theheel.com/cdn/shop/products/1023651_1_834193fe-7ad3-4daf-9546-3efe40896d21.jpg"
+                  class="product-img"
+                  alt="Product 12"
+                />
+              </div>
+              <div class="product-info">
+                <h5 class="product-title">Sneakers</h5>
+                <p class="product-desc">Comfort and style for everyday wear</p>
+                <div class="star-rating">
+                  ★★★☆☆
+                  <span class="rating-text">(3.5)</span>
+                </div>
+                <p class="price">$89.99</p>
+                <button class="buy-button">Buy</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="features-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Why Choose Us</h2>
+          <p class="subtitle">
+            We're committed to providing the best shopping experience with
+            premium products and exceptional service
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <div class="feature-box">
+            <div class="feature-icon">🛡️</div>
+            <h3 class="feature-title">Secure Shopping</h3>
+            <p class="feature-text">
+              100% secure payment processing and data protection for all orders
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-box">
+            <div class="feature-icon">🚚</div>
+            <h3 class="feature-title">Fast Delivery</h3>
+            <p class="feature-text">
+              Free shipping on orders over $50 with quick 2-3 day delivery
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-box">
+            <div class="feature-icon">↩️</div>
+            <h3 class="feature-title">Easy Returns</h3>
+            <p class="feature-text">
+              30-day hassle-free return policy for all products
+            </p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-box">
+            <div class="feature-icon">🎧</div>
+            <h3 class="feature-title">24/7 Support</h3>
+            <p class="feature-text">
+              Round-the-clock customer service to assist you anytime
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h5 class="footer-title">About Us</h5>
+            <p>
+              DigiHub is your premium destination for the latest trends in
+              fashion, electronics, and lifestyle products.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h5 class="footer-title">Connect With Us</h5>
+            <div class="social-icons">
+              <a href="#" class="icon icon-facebook"></a>
+              <a href="#" class="icon icon-twitter"></a>
+              <a href="#" class="icon icon-instagram"></a>
+              <a href="#" class="icon icon-telegram"></a>
+            </div>
+          </div>
+        </div>
+        <hr class="footer-divider" />
+        <p class="copyright">&copy; 2025 DigiHub. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Simple JavaScript for mobile menu toggle
+      document
+        .getElementById("menuToggle")
+        .addEventListener("click", function () {
+          document.getElementById("navMenu").classList.toggle("show");
+        });
+    </script>
+  </body>
+</html>

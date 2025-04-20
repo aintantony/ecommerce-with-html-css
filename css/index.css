@@ -1,0 +1,583 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=SUSE:wght@100..800&family=Suwannaphum:wght@100;300;400;700;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Colors */
+:root {
+  --primary-color: #07063e;
+  --secondary-color: #0f59af;
+  --accent-color: #ff6b6b;
+  --bg-light: #f8f9fa;
+  --text-dark: #000;
+  --text-light: #ecf0f1;
+  --success-color: #28a745;
+  --success-hover: #218838;
+}
+
+/* Basic Elements */
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 16px;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header & Navigation */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.main-nav {
+  background-color: var(--primary-color);
+  padding: 12px 0;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 60px;
+}
+
+.site-title {
+  font-family: "Ubuntu";
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+  margin-left: 10px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  position: relative;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: transform 0.3s ease;
+}
+
+.menu-icon::before {
+  transform: translateY(-8px);
+}
+
+.menu-icon::after {
+  transform: translateY(8px);
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-link {
+  color: white;
+  position: relative;
+  padding: 10px 0;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #ffffff;
+  width: 0;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(108, 99, 255, 0.8), rgba(74, 144, 226, 0.8)),
+    url("https://pebblely.com/blog/create-product-images-with-ai/collage-of-ai-generated-images.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.hero-text {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.button-large {
+  padding: 16px 32px;
+  font-size: 18px;
+}
+
+.button-success {
+  background-color: var(--success-color);
+  color: white;
+}
+
+.button-success:hover {
+  background-color: var(--success-hover);
+  transform: translateY(-2px);
+}
+
+.button-full {
+  width: 100%;
+}
+
+/* Sections */
+.section {
+  padding: 50px 0;
+}
+
+.section-light {
+  background-color: var(--bg-light);
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Grid System */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col-25 {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.col-33 {
+  width: 33.33%;
+  padding: 0 15px;
+}
+
+.col-50 {
+  width: 50%;
+  padding: 0 15px;
+}
+
+.col-100 {
+  width: 100%;
+  padding: 0 15px;
+}
+
+/* Cards */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+  height: 100%;
+}
+
+.product-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-body {
+  padding: 24px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #666666;
+  margin-bottom: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-center {
+  text-align: center;
+}
+
+/* Category Icons */
+.category-icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+/* Product Images */
+.product-img-container {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  object-fit: contain;
+}
+
+.product-card:hover .product-image {
+  transform: translate(-50%, -50%) scale(1.05);
+  transition: transform 0.5s ease;
+}
+
+.price-tag {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+/* Newsletter Section */
+.newsletter-form {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Utilities */
+.text-center {
+  text-align: center;
+}
+
+.center-block {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.gap-spacer {
+  margin-bottom: 30px;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--text-dark);
+  color: white;
+  padding: 40px 0 20px;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-col {
+  width: 45%;
+}
+
+.footer-title {
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 24px;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+.footer-divider {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 20px 0;
+}
+
+.copyright {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* Icons (mimicking Bootstrap Icons) */
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+  font-size: inherit;
+}
+
+.icon-watch:before {
+  content: "⌚";
+}
+
+.icon-laptop:before {
+  content: "💻";
+}
+
+.icon-house:before {
+  content: "🏠";
+}
+
+.icon-gift:before {
+  content: "🎁";
+}
+
+.icon-facebook:before {
+  content: "fb";
+}
+
+.icon-twitter:before {
+  content: "tw";
+}
+
+.icon-instagram:before {
+  content: "ig";
+}
+
+.icon-telegram:before {
+  content: "tg";
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+  .col-25 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: var(--primary-color);
+    width: 100%;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+
+  .nav-item {
+    margin: 10px 20px;
+  }
+
+  .footer-row {
+    flex-direction: column;
+  }
+
+  .footer-col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+  }
+
+  .col-25,
+  .col-33 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .product-img-container {
+    height: 180px;
+  }
+
+  .card-body {
+    padding: 14px;
+  }
+
+  .category-icon {
+    font-size: 1.5rem;
+  }
+
+  .hero {
+    min-height: 50vh;
+  }
+
+  .site-title {
+    font-size: 16px;
+  }
+
+  .logo {
+    width: 40px;
+  }
+
+  .price-tag {
+    font-size: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text {
+    font-size: 0.875rem;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .form-input {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 374px) {
+  .product-img-container {
+    height: 160px;
+  }
+
+  .hero {
+    min-height: 45vh;
+  }
+
+  .category-icon {
+    font-size: 1.3rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 35px;
+  }
+}
+
+@media (max-height: 576px) and (orientation: landscape) {
+  .hero {
+    min-height: 100vh;
+  }
+
+  .product-img-container {
+    height: 160px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(108, 99, 255, 0.8),
+        rgba(74, 144, 226, 0.8)
+      ),
+      url("https://pebblely.com/blog/create-product-images-with-ai/collage-of-ai-generated-images.jpg");
+  }
+}
