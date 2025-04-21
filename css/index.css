@@ -53,7 +53,6 @@ img {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 /* Header & Navigation */
@@ -138,7 +137,7 @@ img {
 .nav-link {
   color: white;
   position: relative;
-  padding: 10px 0;
+  padding: 12px 0;
 }
 
 .nav-link::after {
@@ -371,12 +370,15 @@ img {
 
 .footer-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 20px;
 }
 
-.footer-col {
-  width: 45%;
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
 }
 
 .footer-title {
@@ -387,12 +389,11 @@ img {
   display: flex;
   gap: 15px;
   font-size: 24px;
-  justify-content: flex-end;
   margin-top: 15px;
 }
 
 .footer-divider {
-  border: 0;
+  border: none;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   margin: 20px 0;
 }

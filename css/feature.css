@@ -22,6 +22,8 @@ body {
   --light-bg: #f8f9fa;
   --dark-text: #000;
   --light-text: #ecf0f1;
+  --text-dark: #000000;  /* Added this */
+  --accent-color: #ff6b6b;  /* Added this */
 }
 
 /* Container */
@@ -29,7 +31,6 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 /* Header Styles */
@@ -42,7 +43,7 @@ body {
 .top-menu {
   background-color: var(--main-color);
   color: white;
-  padding: 10px 0;
+  padding: 12px 0;
 }
 
 .menu-inner {
@@ -312,6 +313,7 @@ body {
   color: #777;
 }
 
+/* Footer */
 .footer {
   background-color: var(--text-dark);
   color: white;
@@ -320,12 +322,15 @@ body {
 
 .footer-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 20px;
 }
 
-.footer-col {
-  width: 45%;
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
 }
 
 .footer-title {
@@ -336,12 +341,21 @@ body {
   display: flex;
   gap: 15px;
   font-size: 24px;
-  justify-content: flex-end;
   margin-top: 15px;
 }
 
-.footer-divider {
-  border: 0;
+.social-link {
+  color: white;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  color: #ff6b6b; /* Using the highlight color for hover effect */
+  transition: color 0.3s ease;
+}
+
+.divider {
+  border: none;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   margin: 20px 0;
 }
