@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=SUSE:wght@100..800&family=Suwannaphum:wght@100;300;400;700;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
-/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +13,6 @@ body {
   background-color: #f8f9fa;
 }
 
-/* Custom Variables */
 :root {
   --main-color: #07063e;
   --second-color: #0f59af;
@@ -26,14 +24,12 @@ body {
   --accent-color: #ff6b6b;  /* Added this */
 }
 
-/* Container */
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Header Styles */
 .sticky-header {
   position: sticky;
   top: 0;
@@ -106,7 +102,6 @@ body {
   width: 100%;
 }
 
-/* Hero Section */
 .hero-section {
   background: linear-gradient(rgba(108, 99, 255, 0.8), rgba(74, 144, 226, 0.8)),
     url("/api/placeholder/1920/400");
@@ -127,7 +122,6 @@ body {
   font-size: 1.25rem;
 }
 
-/* Filters Section */
 .filter-section {
   padding: 20px 0;
 }
@@ -350,7 +344,7 @@ body {
 }
 
 .social-link:hover {
-  color: #ff6b6b; /* Using the highlight color for hover effect */
+  color: #ff6b6b;
   transition: color 0.3s ease;
 }
 

@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=SUSE:wght@100..800&family=Suwannaphum:wght@100;300;400;700;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
-/* Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +12,6 @@ body {
   color: #000;
 }
 
-/* Variables */
 :root {
   --primary-color: #07063e;
   --secondary-color: #0f59af;
@@ -23,7 +21,6 @@ body {
   --text-light: #ecf0f1;
 }
 
-/* Header and Navigation */
 .sticky {
   position: sticky;
   top: 0;
@@ -103,7 +100,6 @@ body {
   width: 100%;
 }
 
-/* Hero Section */
 .hero-section {
   background: linear-gradient(rgba(108, 99, 255, 0.8), rgba(74, 144, 226, 0.8));
   background-size: cover;
@@ -125,7 +121,6 @@ body {
   margin: 0 auto;
 }
 
-/* Contact Info Section */
 .section {
   padding: 50px 0;
 }
@@ -178,7 +173,6 @@ body {
   margin-bottom: 8px;
 }
 
-/* Contact Form Section */
 .form-row {
   display: flex;
   flex-wrap: wrap;
@@ -233,14 +227,12 @@ body {
   background-color: #ff5252;
 }
 
-/* Map Section */
 .map-img {
   width: 100%;
   border-radius: 15px;
   display: block;
 }
 
-/* Footer */
 .footer {
   background-color: var(--text-dark);
   color: white;

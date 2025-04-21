@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=SUSE:wght@100..800&family=Suwannaphum:wght@100;300;400;700;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
-/* CSS Reset */
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +20,6 @@ body {
   line-height: 1.6;
 }
 
-/* Header Styles */
 .sticky-header {
   position: sticky;
   top: 0;
@@ -103,7 +101,6 @@ body {
   cursor: pointer;
 }
 
-/* Hero Section */
 .about-hero {
   background: linear-gradient(rgba(108, 99, 255, 0.8), rgba(74, 144, 226, 0.8)),
     url("/api/placeholder/1920/400");
@@ -124,7 +121,6 @@ body {
   font-size: 20px;
 }
 
-/* Section Styles */
 .section {
   padding: 50px 0;
 }
@@ -138,7 +134,6 @@ body {
   margin-bottom: 40px;
 }
 
-/* Card Styles */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -178,7 +173,6 @@ body {
   text-align: center;
 }
 
-/* Team Section */
 .team-member-img {
   width: 150px;
   height: 150px;
@@ -187,7 +181,6 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Values Section */
 .value-icon {
   font-size: 2.5rem;
   color: var(--accent-color);
@@ -195,7 +188,6 @@ body {
   display: inline-block;
 }
 
-/* Stats Section */
 .stat-card {
   background: linear-gradient(
     135deg,
@@ -213,7 +205,6 @@ body {
   font-weight: bold;
 }
 
-/* Join Us Section */
 .join-us {
   text-align: center;
 }
@@ -238,7 +229,6 @@ body {
   background-color: #ff5252;
 }
 
-/* Footer */
 .footer {
   background: var(--text-dark);
   color: white;
@@ -284,7 +274,6 @@ body {
   margin-bottom: 0;
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
